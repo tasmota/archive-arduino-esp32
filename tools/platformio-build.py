@@ -157,9 +157,7 @@ env.Append(
         join(FRAMEWORK_DIR, "tools", "sdk", "include", "wifi_provisioning"),
         join(FRAMEWORK_DIR, "tools", "sdk", "include", "wpa_supplicant"),
         join(FRAMEWORK_DIR, "tools", "sdk", "include", "xtensa-debug-module"),
-        join(FRAMEWORK_DIR, "tools", "sdk", "include", "esp-face"),
         join(FRAMEWORK_DIR, "tools", "sdk", "include", "esp32-camera"),
-        join(FRAMEWORK_DIR, "tools", "sdk", "include", "esp-face"),
         join(FRAMEWORK_DIR, "tools", "sdk", "include", "fb_gfx"),
         join(FRAMEWORK_DIR, "cores", env.BoardConfig().get("build.core"))
     ],
@@ -170,7 +168,7 @@ env.Append(
     ],
 
     LIBS=[
-        "-lgcc", "-ldetection_cat_face", "-lespcoredump", "-lwpa", "-lrtc", "-lvfs", "-lnewlib", "-ldetection", "-lfreemodbus", "-lprotocomm", "-lwpa_supplicant", "-lfatfs", "-lsmartconfig", "-lesp_ringbuf", "-lfd", "-lesp_adc_cal", "-lspiffs", "-lopenssl", "-lsdmmc", "-ljsmn", "-lespnow", "-lc", "-lbootloader_support", "-lesp_https_server", "-lcore", "-lspi_flash", "-lmicro-ecc", "-lunity", "-lapp_trace", "-lexpat", "-lheap", "-ltcp_transport", "-lfr", "-lfb_gfx", "-lethernet", "-lesp_websocket_client", "-lesp32-camera", "-lcoexist", "-lpthread", "-lmqtt", "-lface_recognition", "-llwip", "-lasio", "-lefuse", "-lnvs_flash", "-lhal", "-lcxx", "-lesp_event", "-lfreertos", "-llibsodium", "-lwear_levelling", "-ljson", "-lesp32", "-lcoap", "-lbt", "-lbtdm_app", "-lmbedtls", "-lwpa2", "-lface_detection", "-lesp-tls", "-lwps", "-lpe", "-lmdns", "-lmesh", "-lesp_http_server", "-llog", "-lesp_http_client", "-lsoc", "-lc_nano", "-lnghttp", "-lprotobuf-c", "-lphy", "-lesp_https_ota", "-lwifi_provisioning", "-ldl", "-lulp", "-limage_util", "-lnet80211", "-lsmartconfig_ack", "-lapp_update", "-lm", "-ltcpip_adapter", "-lpp", "-ldriver", "-lconsole", "-lod", "-lxtensa-debug-module", "-lstdc++"
+        "-lgcc", "-lefuse", "-lnghttp", "-lmesh", "-lwpa", "-lvfs", "-lpthread", "-lfreertos", "-lc_nano", "-llog", "-ldriver", "-ljson", "-lfatfs", "-lconsole", "-ltcpip_adapter", "-lopenssl", "-lbtdm_app", "-lunity", "-llwip", "-lphy", "-lmdns", "-lnewlib", "-lbt", "-lbootloader_support", "-ldl", "-lfreemodbus", "-lcoexist", "-lcat_face_detect", "-lxtensa-debug-module", "-lapp_trace", "-lmbedtls", "-lcore", "-lwear_levelling", "-lesp-tls", "-lesp_http_client", "-lwps", "-lnvs_flash", "-lrtc", "-lesp_ringbuf", "-lspi_flash", "-lfb_gfx", "-ljsmn", "-lprotobuf-c", "-lesp32-camera", "-lesp_websocket_client", "-lhal", "-lesp_adc_cal", "-lulp", "-lesp_event", "-lwifi_provisioning", "-lsdmmc", "-lc", "-lethernet", "-lnet80211", "-lesp_http_server", "-lesp32", "-lesp_https_ota", "-ltcp_transport", "-lmicro-ecc", "-lcolor_detect", "-lexpat", "-lasio", "-lheap", "-lwpa2", "-lprotocomm", "-lhuman_face_detect", "-lspiffs", "-lespcoredump", "-lwpa_supplicant", "-lesp_https_server", "-lpp", "-llibsodium", "-lmfn", "-lsoc", "-lcoap", "-lsmartconfig_ack", "-lapp_update", "-lmqtt", "-lespnow", "-lsmartconfig", "-lcxx", "-lm", "-lstdc++"
     ],
 
     LIBSOURCE_DIRS=[
