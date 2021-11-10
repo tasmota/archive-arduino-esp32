@@ -131,7 +131,6 @@ env.Append(
         "-u", "pthread_include_pthread_local_storage_impl",
         "-u", "ld_include_highint_hdl",
         "-u", "start_app",
-        "-u", "start_app_other_cores",
         "-u", "__ubsan_include",
         "-u", "vfs_include_syscalls_impl",
         "-u", "app_main",
